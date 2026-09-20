@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { taskor, taskorOblique, poppins } from '@/lib/fonts'
+import { taskor, taskorOblique, poppins, permanentMarker } from '@/lib/fonts'
 import { SmoothScroll } from '@/components/smooth-scroll'
 import './globals.css'
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${taskor.variable} ${taskorOblique.variable} ${poppins.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} ${taskor.variable} ${taskorOblique.variable} ${poppins.variable} ${permanentMarker.variable}`}
     >
       <body className="min-h-screen bg-[#07050e] text-foreground font-poppins antialiased selection:bg-[#9945FF] selection:text-white">
         <SmoothScroll>{children}</SmoothScroll>

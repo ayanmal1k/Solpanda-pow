@@ -1,10 +1,17 @@
 import localFont from 'next/font/local'
-import { Poppins } from 'next/font/google'
+import { Poppins, Permanent_Marker } from 'next/font/google'
 
 export const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-poppins',
+  display: 'swap',
+})
+
+export const permanentMarker = Permanent_Marker({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-permanent-marker',
   display: 'swap',
 })
 
@@ -36,4 +43,5 @@ export const taskorOblique = localFont({
   variable: '--font-taskor-oblique',
   display: 'swap',
 })
+
 
