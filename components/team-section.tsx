@@ -224,7 +224,9 @@ export default function TeamSection() {
 
               {/* Solana Gradient Pill CTA Button */}
               <motion.a
-                href="#contact"
+                href="https://t.me/Sol_pandaa"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

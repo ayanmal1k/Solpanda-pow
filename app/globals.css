@@ -207,3 +207,31 @@
   animation: gradient-shift 2.5s ease infinite;
 }
 
+/* ========================================================
+   CUSTOM SOLANA GRADIENT SCROLLBAR
+   ======================================================== */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05030b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9945FF 0%, #00F0FF 50%, #14F195 100%);
+  border-radius: 9999px;
+  border: 2px solid #05030b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #DC1FFF 0%, #00F0FF 50%, #00FFA3 100%);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9945FF #05030b;
+}
+
+

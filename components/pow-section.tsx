@@ -103,7 +103,9 @@ export default function PowSection() {
 
               {/* Neon Outline Pill CTA Button */}
               <motion.a
-                href="#join"
+                href="https://t.me/solpandaa001"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

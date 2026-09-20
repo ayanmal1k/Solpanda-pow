@@ -7,7 +7,7 @@ import { ArrowRight, Send, MessageSquare } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-[#040209] pt-20 pb-12 px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 overflow-hidden border-t border-white/10 select-none">
+    <footer className="relative w-full bg-[#040209] py-16 sm:py-20 px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 overflow-hidden border-t border-white/10 select-none">
       {/* Background Ambient Solana Glows */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-[#9945FF]/20 via-[#00F0FF]/20 to-[#00FFA3]/15 rounded-full blur-[160px] pointer-events-none" />
       <div className="absolute top-0 left-1/4 w-80 h-80 bg-[#9945FF]/10 rounded-full blur-[120px] pointer-events-none" />
@@ -19,11 +19,11 @@ export default function Footer() {
       <div className="max-w-[1600px] mx-auto">
         {/* ========================================================
             MAIN 3-COLUMN FOOTER LAYOUT
-            Left: Solana Logo + Hero Text (SOL PANDA) + Bio
+            Left: Solana Logo + Hero Text (SOL PANDA)
             Middle: BIG SOL SHADES with Glowing Solana Gradient
             Right: X + 2 Telegram Icons (Channel & DM) + "LET'S TALK" Button Below
             ======================================================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 xl:gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 xl:gap-12 items-center">
           
           {/* ======================================================
               LEFT COLUMN: SOLANA LOGO + SOL PANDA HERO TEXT
@@ -58,19 +58,6 @@ export default function Footer() {
                   sizes="240px"
                 />
               </div>
-            </div>
-
-            {/* Tagline / Subtitle */}
-            <p className="font-poppins text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed mb-6">
-              Empowering Solana projects with relentless community execution, coordinated raiding power, and high-impact momentum.
-            </p>
-
-            {/* Solana Network Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0c071a] border border-[#00F0FF]/30 shadow-[0_0_12px_rgba(0,240,255,0.2)]">
-              <span className="w-2 h-2 rounded-full bg-[#00FFA3] animate-ping" />
-              <span className="font-poppins text-[11px] font-bold uppercase tracking-wider text-slate-300">
-                Native on Solana Ecosystem
-              </span>
             </div>
           </motion.div>
 
@@ -119,13 +106,13 @@ export default function Footer() {
             <div className="flex items-center gap-3.5 sm:gap-4">
               {/* 1. X (Twitter) Icon */}
               <motion.a
-                href="https://x.com"
+                href="https://x.com/sol_panda1"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -3 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative flex items-center justify-center w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-[#0c071a] border border-white/10 hover:border-[#00F0FF]/60 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300"
-                title="Follow on X"
+                title="Follow on X (@sol_panda1)"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#00F0FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 <svg
@@ -139,13 +126,13 @@ export default function Footer() {
 
               {/* 2. Telegram Channel Icon */}
               <motion.a
-                href="https://t.me"
+                href="https://t.me/solpandaa001"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -3 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative flex items-center justify-center w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-[#0c071a] border border-white/10 hover:border-[#00F0FF]/60 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300"
-                title="Telegram Channel"
+                title="Telegram Channel (@solpandaa001)"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#00F0FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 <Send className="w-5 h-5 text-slate-300 group-hover:text-[#00F0FF] transition-colors duration-200" />
@@ -157,13 +144,13 @@ export default function Footer() {
 
               {/* 3. Telegram DM Icon */}
               <motion.a
-                href="https://t.me"
+                href="https://t.me/Sol_pandaa"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -3 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative flex items-center justify-center w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-[#0c071a] border border-white/10 hover:border-[#9945FF]/60 hover:shadow-[0_0_20px_rgba(153,69,255,0.4)] transition-all duration-300"
-                title="Telegram Direct Message"
+                title="Telegram Direct Message (@Sol_pandaa)"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#9945FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 <MessageSquare className="w-5 h-5 text-slate-300 group-hover:text-[#c084fc] transition-colors duration-200" />
@@ -176,7 +163,9 @@ export default function Footer() {
 
             {/* "LET'S TALK" CTA Button below the social icons */}
             <motion.a
-              href="#contact"
+              href="https://t.me/Sol_pandaa"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="group relative inline-flex items-center justify-center gap-3 px-8 py-3.5 sm:px-10 sm:py-4 rounded-full bg-gradient-to-r from-[#9945FF] via-[#00F0FF] to-[#00FFA3] text-black font-poppins font-extrabold text-sm sm:text-base uppercase tracking-wider shadow-[0_0_30px_rgba(0,240,255,0.4),0_0_15px_rgba(153,69,255,0.5)] hover:shadow-[0_0_45px_rgba(0,240,255,0.7),0_0_30px_rgba(153,69,255,0.8)] transition-all duration-300"
@@ -186,17 +175,6 @@ export default function Footer() {
             </motion.a>
           </motion.div>
 
-        </div>
-
-        {/* ========================================================
-            BOTTOM COPYRIGHT BAR
-            ======================================================== */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-poppins text-slate-400">
-          <p>© {new Date().getFullYear()} SOL PANDA. All Rights Reserved.</p>
-          <p className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00FFA3]" />
-            Engineered for Solana Ecosystem Growth
-          </p>
         </div>
       </div>
     </footer>

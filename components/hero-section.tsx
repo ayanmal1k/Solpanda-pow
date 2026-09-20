@@ -58,7 +58,7 @@ export default function HeroSection() {
           ======================================================== */}
       <div className="relative z-10 w-full flex-1 flex flex-col justify-start md:justify-center px-5 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 pt-8 sm:pt-12 md:pt-0 pb-64 sm:pb-72 md:pb-0">
         <div className="w-full max-w-xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-3xl flex flex-col items-start space-y-4 sm:space-y-5 md:space-y-6">
-          
+
           {/* 1. Sol Panda Hero Logo Image */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -87,7 +87,7 @@ export default function HeroSection() {
           >
             <h1 className="font-taskor-oblique text-[1.3rem] sm:text-2xl md:text-3xl lg:text-[2.6rem] xl:text-[2.85rem] leading-[1.18] tracking-tight uppercase overflow-visible">
               <span className="inline-block pr-3 sm:pr-4 py-0.5 bg-gradient-to-r from-[#00f5ff] via-[#00f0ff] to-[#00ffa3] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(0,240,255,0.45)]">
-                SOLANA COMMUNITY &amp;
+                COMMUNITY &amp;
               </span>
               <br />
               <span className="inline-block pr-5 sm:pr-7 py-0.5 bg-gradient-to-r from-[#00f5ff] via-[#00f0ff] to-[#00ffa3] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(0,240,255,0.45)]">
@@ -148,7 +148,9 @@ export default function HeroSection() {
             className="pt-2 sm:pt-3"
           >
             <a
-              href="#join"
+              href="https://t.me/solpandaa001"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-poppins font-bold text-xs sm:text-sm tracking-wider uppercase text-[#06040d] overflow-hidden transition-all duration-300 hover:scale-[1.04] active:scale-[0.98]"
               style={{
                 background: 'linear-gradient(90deg, #9945FF 0%, #7B2CBF 40%, #00F0FF 100%)',
@@ -157,7 +159,7 @@ export default function HeroSection() {
             >
               {/* Shimmer sweep effect on hover */}
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none" />
-              
+
               <span className="relative z-10 flex items-center gap-2">
                 JOIN THE PANDA NETWORK
                 <ArrowRight className="w-4 h-4 sm:w-4.5 sm:h-4.5 transition-transform duration-300 group-hover:translate-x-1.5" />
